@@ -1,15 +1,3 @@
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-
-# IntelliJ project files
+target
 .idea
 *.iml
-out
-gen
-### Scala template
-*.class
-*.log
