@@ -4,7 +4,7 @@ object Swaps {
 
 
   // Complete the minimumSwaps function below.
-  def minimumSwaps(arr: Array[Int]) = {
+  def minimumSwaps(arr: Array[Int]): Unit = {
 
 
   }
