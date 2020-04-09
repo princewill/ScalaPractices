@@ -4,20 +4,19 @@ object Swaps {
 
 
   // Complete the minimumSwaps function below.
-  def minimumSwaps(arr: Array[Int]): Unit = {
-    var temp = 0
-    var prev = (arr(0), 0)
-    var swapCount = 0
+  def minimumSwaps(arr: Array[Int]): Int = {
+    var a = 0
+    var count = 0
 
-    arr.zipWithIndex.foreach{
-      case (value, index) =>
-      if(value < prev._1) {
-        arr(index) = prev._1
-        arr(prev._2) = value
-        prev = (value, index)
-        swapCount = swapCount + 1
+    for(a <- arr.indices){
+      while(a + 1 != arr(a)){
+        var temp = arr(a)
+        arr(a) = arr(temp - 1)
+        arr(temp - 1) = temp
+        count = count + 1
       }
     }
+    count
   }
 
   def main(args: Array[String]) {
