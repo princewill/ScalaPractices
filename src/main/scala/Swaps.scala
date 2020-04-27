@@ -1,4 +1,3 @@
-import java.io.PrintWriter
 
 object Swaps {
 
@@ -20,18 +19,10 @@ object Swaps {
   }
 
   def main(args: Array[String]) {
-    val stdin = scala.io.StdIn
 
-    val printWriter = new PrintWriter(sys.env("OUTPUT_PATH"))
+    val res = minimumSwaps(Array(4, 3, 1, 2))
 
-    val n = stdin.readLine.trim.toInt
-
-    val arr = stdin.readLine.split(" ").map(_.trim.toInt)
-    val res = minimumSwaps(arr)
-
-    printWriter.println(res)
-
-    printWriter.close()
+    println(res)
   }
 
 }
