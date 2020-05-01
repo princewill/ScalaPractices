@@ -1,4 +1,9 @@
+target/*
 /target
 .idea
 /.idea
 /*.iml
+
+project/target/streams/compile/compileIncSetup/
+project/target/streams/compile/compileOutputs/
+src/test/
