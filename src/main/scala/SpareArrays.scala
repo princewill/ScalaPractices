@@ -7,7 +7,7 @@ object SpareArrays {
     var stringCountMapping = Map.empty[String, Int]
 
     strings
-      .map(s =>
+      .foreach(s =>
         stringCountMapping.get(s)
           .map(va => stringCountMapping += (s -> (va + 1)))
           .getOrElse(stringCountMapping += (s -> 1))
